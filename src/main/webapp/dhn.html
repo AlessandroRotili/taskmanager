@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Home</title>
+		<!-- Per poter inserire il menu.html prima di tutto dobbiamo importare JQUERY -->
+		<script src="jquery.min.js"></script>
+		<script>
+		/*	$(function(){}); è una versione semplificata di $(document).ready(function(){});
+			Durante il caricamento della pagina, JQUERY si occuperà di sostituire il div con
+			id="includiMenu" secondo le istruzioni della function*/
+			$(function()
+			{
+				//Load permette di leggere un file html e
+				//inserirne il contenuto in un elemento della pagina.
+				//NOTA BENE: occhio ai percorsi della cartella. Menu è nella stessa cartella di home.html
+				//quindi posso semplicemente scrivere /menu.html ma non sarà sempre così.
+				$("#includiMenu").load("/menu.html");
+			});
+		</script>
+	</head>
+	<body>
+		<!--  Questo contenitore serve per poter inserire il menu caricato tramite JS -->
+		<div id="includiMenu"></div>
+		<h1>BENVENUTO NELLA HOME</h1>
+		<div id="includiMenu"></div>
+	</body>
+</html>

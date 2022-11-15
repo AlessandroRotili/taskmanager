@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Form nuovo task</title>
+		<link rel="stylesheet" type="text/css" href="stile.css">
+	</head>
+	<body>
+		<h1>NUOVO TASK</h1>
+		<form action="/tasks/nuovotask" method="get">
+		<div class="main-form">
+		    <h1 align="center">NUOVO TASK</h1>
+			TITOLO <input type="text" name="titolo">
+			<br>
+			DIFFICOLTA <select class="select" name="difficolta">
+							<option value="Facile">Facile</option>
+							<option value="Medio">Medio</option>
+							<option value="Difficile">Difficile</option>
+						</select>
+			<br>
+			IDPO  <input type="text" name="idprojectowner">	
+			<input type="submit" value="SALVA">
+			</div>
+		</form>
+	</body>
+</html>

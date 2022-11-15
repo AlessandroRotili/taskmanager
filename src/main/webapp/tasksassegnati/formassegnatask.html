@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Form assegna task</title>
+		<link rel="stylesheet" type="text/css" href="stile.css">
+	</head>
+	<body>
+		<h1>ASSEGNA TASK</h1>
+		<form action="/tasksassegnati/assegna" method="get">
+		 <div class="main-form">
+			SCADENZA <input type="date" name="scadenza">
+			<br>
+			STATO 	<select class="select" name="stato">
+						<option value="Programmato">Programmato</option>
+						<option value="In corso">In corso</option>
+						<option value="Terminato">Terminato</option>
+					</select>
+			<br>
+			IDDIPENDENTE  <input type="text" name="iddipendente">	
+			<br>
+			<input type="hidden" name="idtask">	
+			<input type="submit" value="ASSEGNA">
+			</div>
+		</form>
+	</body>
+</html>

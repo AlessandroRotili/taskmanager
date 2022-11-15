@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>homed</title>
+<style>
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+a{
+    text-align: center;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-dipendenti, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-task, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-projectowner, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-logout, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body{
+  background: url(https://i.imgur.com/MQB99sg.jpg) #a9b89e;
+  font-family:Arial;
+  font-size:12px;
+  color:black;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: Verdana, sans-serif;
+}
+
+p {
+    text-align: center;
+	text-align: center;
+	font-size: 20px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: Verdana, sans-serif;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+
+
+</style>
+</head>
+<body>
+<h1>BENVENUTO NEL SITO</h1>
+
+<nav>
+	<a href="/homed">HOME</a>
+	<a href="/dipendenti/elencodipendentid">DIPENDENTI</a>
+	<a href="/tasks/elencotaskd">TASKS</a>
+	<a href="/dipendenti/elencoprojectownerd">PROJECT OWNERS</a>
+	<a href="/logout">LOGOUT</a>
+	<div class="animation start-home"></div>
+</nav>
+<p>
+<img src="https://tse3.mm.bing.net/th?id=OIP.Mrc1lZTuUuY9gkE4TobZYwHaE8&pid=Api&P=0" align="middle">
+</p>
+</body>
+</html>
